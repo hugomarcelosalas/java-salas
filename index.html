@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Inventario Calcetines</title>
+</head>
+<header>
+    <h1>CostaJump</h1>
+    <h2>STOCK DE CALCETINES</h2>
+</header>
+<body> 
+    <!-- Formulario stock inicial -->
+    <main>
+        <h3>Ingrese el Stock inicial de Calcetines:</h3>
+        <form id="formulario1">
+            <div>
+                <label for="XXL">D:</label>
+                <input id="Día" type="text" placeholder="Fecha" name="IngreseFecha" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XXL">XXL:</label>
+                <input id="IngreseInicialXxl" type="number" placeholder="XXL" name="IngreseInicialXxl" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XL">XL:</label>
+                <input id="IngreseInicialXl" type="number" placeholder="XL" name="IngreseInicialXl" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="L">L:</label>
+                <input id="IngreseIniciall" type="number" placeholder="L" name="IngreseIniciall" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="M">M:</label>
+                <input id="IngreseInicialM" type="number" placeholder="M" name="IngreseInicialM" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="S">S:</label>
+                <input id="IngreseInicialS" type="number" placeholder="S" name="IngreseInicialS" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XS">XS:</label>
+                <input id="IngreseInicialXs" type="number" placeholder="XS" name="IngreseInicialXs" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <!-- Boton -->
+            <div class="align-center">
+                <input type="submit" class="btn" id="boton1">
+            </div>
+        </form>
+        <!-- Formulario Ventas -->
+        <h3>Ingrese las ventas de calcetines:</h3>
+        <form id="ventas">
+            <div>
+                <label for="XXL">XXL:</label>
+                <input id="IngreseVentasXxl" type="number" placeholder="XXL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XL">XL:</label>
+                <input id="IngreseVentasXl" type="number" placeholder="XL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="L">L:</label>
+                <input id="IngreseVentasL" type="number" placeholder="L" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="M">M:</label>
+                <input id="IngreseVentasM" type="number" placeholder="M" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="S">S:</label>
+                <input id="IngreseVentasS" type="number" placeholder="S" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XS">XS:</label>
+                <input id="IngreseVentasXs" type="number" placeholder="XS" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <!-- Boton -->
+            <div class="align-center">
+                <input type="submit" class="btn">
+            </div>
+        </form>
+        <!-- Formulario Cumpleaños -->
+        <h3>Ingrese los Calcetines entregados en cumpleaños:</h3>
+        <form id="cumples">
+            <div>
+                <label for="XXL">XXL:</label>
+                <input id="IngreseCumplesXxl" type="number" placeholder="XXL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XL">XL:</label>
+                <input id="IngreseCumplesXl" type="number" placeholder="XL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="L">L:</label>
+                <input id="IngreseCumplesl" type="number" placeholder="L" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="M">M:</label>
+                <input id="IngreseCumplesM" type="number" placeholder="M" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="S">S:</label>
+                <input id="IngreseCumplesS" type="number" placeholder="S" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XS">XS:</label>
+                <input id="IngreseCumplesXs" type="number" placeholder="XS" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <!-- Boton -->
+            <div class="align-center">
+                <input type="submit" class="btn">
+            </div>
+        </form>
+        <!-- Formulario stock final -->
+        <h3>Ingrese el stock actual de calcetines:</h3>
+        <form id="stock">
+            <div>
+                <label for="XXL">XXL:</label>
+                <input id="IngreseStockXxl" type="number" placeholder="XXL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+
+            <div>
+                <label for="XL">XL:</label>
+                <input id="IngreseStockXl" type="number" placeholder="XL" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="L">L:</label>
+                <input id="IngreseStockL" type="number" placeholder="L" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="M">M:</label>
+                <input id="IngreseStockM" type="number" placeholder="M" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="S">S:</label>
+                <input id="IngreseStockS" type="number" placeholder="S" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <div>
+                <label for="XS">XS:</label>
+                <input id="IngreseStockXs" type="number" placeholder="XS" name="calcetines" min="0" required>
+                <span class="validity"></span>
+            </div>
+            <!-- Boton -->
+            <div class="align-center">
+                <input type="submit" class="btn">
+            </div>
+        </form><br>
+        <div class="calcular">
+            <button id="restaIXV" class="button">Calcular</button>
+            <!-- generar tabla -->
+            <input type="button" value="Generar tabla" class="button" onclick="genera_tabla()">
+        </div>
+        <!-- Preferible crear un div vacio y sobre este div lo manipulamos la informacion, se suelen llamar "skeletors" o "placeholders" -->
+        <div class="contenedorTabla">
+            <table id="tabla"></table>
+        </div>
+    </main>
+    <script src="./JS/InventarioCalcetines.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
